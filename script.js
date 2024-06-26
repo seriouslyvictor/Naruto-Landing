@@ -27,7 +27,8 @@ function rotateSwirls() {
   size.setAttribute("viewBox", `0 0 ${viewPortW} ${viewPortH}`);
 
   function rotate() {
-    angle += -1.5 % 60;
+    angle += -1;
+    angle <= -360 ? (angle = 0) : null;
     svgGroup.setAttribute("transform", `rotate(${angle} 0 0)`);
     requestAnimationFrame(rotate);
   }
