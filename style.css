@@ -210,11 +210,13 @@ body {
     overflow: hidden;
     flex: 0 1 0%;
     transition: 0.8s ease-in-out;
+    opacity: 0;
 }
 
 .loaded .personagens--frame {
     flex: 0 0 50%;
-    border: 2px solid #18181B
+    border: 2px solid #18181B;
+    opacity: 1;
 }
 
 .personagens--frame img {

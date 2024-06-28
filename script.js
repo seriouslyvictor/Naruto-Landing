@@ -35,28 +35,24 @@ function rotateSwirls() {
 
   rotate();
 }
-
-// Start the rotation when the document is ready
-document.addEventListener("DOMContentLoaded", rotateSwirls);
-
 const thumbs = [
-  "Assets/Images/Naruto__mini.png",
-  "Assets/Images/kakashi__mini.png",
-  "Assets/Images/kisame__mini.png",
-  "Assets/Images/sasuke__mini.png",
-  "Assets/Images/tsunade__mini.png",
-  "Assets/Images/Naruto__mini.png",
-  "Assets/Images/kakashi__mini.png",
-  "Assets/Images/kisame__mini.png",
-  "Assets/Images/sasuke__mini.png",
-  "Assets/Images/tsunade__mini.png",
+  "Assets/Images/Naruto__mini.webp",
+  "Assets/Images/kakashi__mini.webp",
+  "Assets/Images/kisame__mini.webp",
+  "Assets/Images/sasuke__mini.webp",
+  "Assets/Images/tsunade__mini.webp",
+  "Assets/Images/Naruto__mini.webp",
+  "Assets/Images/kakashi__mini.webp",
+  "Assets/Images/kisame__mini.webp",
+  "Assets/Images/sasuke__mini.webp",
+  "Assets/Images/tsunade__mini.webp",
 ];
 
 function carregarPersonagens() {
   const container = document.querySelector(".personagens--container");
   for (const thumb of thumbs) {
     const html = `<div class="thumb">
-    <img class="thumb--img" src="${thumb}" alt="Miniatura do Personagem">
+    <img class="thumb--img" src="${thumb}" loading="lazy" alt="Miniatura do Personagem">
     </div>`;
     container.insertAdjacentHTML("beforeEnd", html);
   }
@@ -78,4 +74,5 @@ function carregarPersonagens() {
 //   }
 // }
 
-carregarPersonagens();
+document.addEventListener("DOMContentLoaded", carregarPersonagens);
+document.addEventListener("DOMContentLoaded", rotateSwirls);
