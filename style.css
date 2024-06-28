@@ -156,10 +156,18 @@ body {
     left: 0;
 }
 
-.personagens--container {
-    margin-top: 4rem;
+.p--wrapper {
     display: flex;
-    flex-flow: wrap;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.personagens--container {
+    transition: 0.4s;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
     gap: 1.5rem;
 }
 
@@ -168,8 +176,20 @@ body {
     place-items: center;
     width: 8.125rem;
     height: 8.75rem;
-    background: url(Assets/Images/Border_Paint.png) center/cover no-repeat;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.thumb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(Assets/Images/Border_Paint.png) center/cover no-repeat;
+    z-index: -1;
 }
 
 .thumb img {
@@ -178,4 +198,38 @@ body {
 
 .thumb:hover img {
     transform: scale(1.1);
+}
+
+.thumb:hover::before {
+    animation: spin 1.5s infinite linear;
+}
+
+.personagens--frame {
+    max-height: 43.75rem;
+    max-width: 37.5rem;
+    overflow: hidden;
+    flex: 0 1 0%;
+    transition: 0.8s ease-in-out;
+}
+
+.loaded .personagens--frame {
+    flex: 0 0 50%;
+    border: 2px solid #18181B
+}
+
+.personagens--frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

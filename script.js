@@ -45,6 +45,11 @@ const thumbs = [
   "Assets/Images/kisame__mini.png",
   "Assets/Images/sasuke__mini.png",
   "Assets/Images/tsunade__mini.png",
+  "Assets/Images/Naruto__mini.png",
+  "Assets/Images/kakashi__mini.png",
+  "Assets/Images/kisame__mini.png",
+  "Assets/Images/sasuke__mini.png",
+  "Assets/Images/tsunade__mini.png",
 ];
 
 function carregarPersonagens() {
@@ -61,8 +66,16 @@ function carregarPersonagens() {
   }
 }
 
-function abrirMiniatura(e) {
-  alert("Vamo carrega kraiooooooooo");
-}
+// function abrirMiniatura(e) {
+//   const source = e.target.getAttribute("src");
+//   const wrapper = document.querySelector(".p--wrapper");
+//   const frame = document.querySelector(".personagens--frame img");
+
+//   if (source === frame.getAttribute("src")) wrapper.classList.remove("loaded");
+//   else {
+//     wrapper.classList.add("loaded");
+//     frame.setAttribute("src", source);
+//   }
+// }
 
 carregarPersonagens();
