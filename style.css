@@ -133,7 +133,7 @@ body {
 #personagens {
     min-height: 100vh;
     position: relative;
-    background: url(Assets/Images/personagens__fundo.png) top/cover no-repeat fixed;
+    background: url(Assets/Images/personagens__fundo.webp) top/cover no-repeat fixed;
     padding-top: 16.25rem;
     padding: 16.25rem 5rem 0rem 5rem;
 }
