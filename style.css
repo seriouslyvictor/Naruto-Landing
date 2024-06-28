@@ -114,6 +114,7 @@ body {
     padding: 4rem 5rem;
     width: fit-content;
     height: 100%;
+    z-index: 999;
 }
 
 .main--nav a {
