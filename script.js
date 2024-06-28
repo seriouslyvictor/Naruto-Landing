@@ -38,3 +38,31 @@ function rotateSwirls() {
 
 // Start the rotation when the document is ready
 document.addEventListener("DOMContentLoaded", rotateSwirls);
+
+const thumbs = [
+  "Assets/Images/Naruto__mini.png",
+  "Assets/Images/kakashi__mini.png",
+  "Assets/Images/kisame__mini.png",
+  "Assets/Images/sasuke__mini.png",
+  "Assets/Images/tsunade__mini.png",
+];
+
+function carregarPersonagens() {
+  const container = document.querySelector(".personagens--container");
+  for (const thumb of thumbs) {
+    const html = `<div class="thumb">
+    <img class="thumb--img" src="${thumb}" alt="Miniatura do Personagem">
+    </div>`;
+    container.insertAdjacentHTML("beforeEnd", html);
+  }
+  const allThumbs = document.querySelectorAll(".thumb");
+  for (const thumbEl of allThumbs) {
+    thumbEl.addEventListener("click", abrirMiniatura);
+  }
+}
+
+function abrirMiniatura(e) {
+  alert("Vamo carrega kraiooooooooo");
+}
+
+carregarPersonagens();

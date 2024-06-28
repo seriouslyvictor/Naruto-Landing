@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naruto!</title>
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/animista.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="animista.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <section class="hero">
+    <section id="hero">
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500' id="swirl">
             <rect id="swirl__size" fill='#ee5522' width='2000' height='1500' />
             <defs>
@@ -70,15 +73,33 @@
                 </g>
             </g>
         </svg>
-        <button class="btn" id="menu">
-            <img class="img--nav" src="Assets/SVGs/Konoha.svg" alt="Icone Konoha">
-        </button>
+        <header class="hero--header">
+            <button class="btn" id="menu">
+                <img class="img--nav" src="Assets/SVGs/Konoha.svg" alt="Icone Konoha">
+            </button>
+        </header>
         <nav class="main--nav">
             <img src="" alt="white logo">
             <a href="#">Novidades</a>
             <a href="#">Personagens</a>
             <button class="btn close">X</button>
         </nav>
+        <div class="hero--wrapper">
+            <img class="hero--corner" src="Assets/Images/Naruto Side.png" alt="Imagem do Naruto">
+            <div class="hero--content">
+                <img class="hero--logo" src="Assets/Images/Naruto Title.png" alt="Título do Naruto">
+                <h2 class="hero--title">Novidades</h2>
+            </div>
+        </div>
+
+    </section>
+    <section id="personagens">
+
+        <h2 class="personagens--title">Personagens</h2>
+        <section class="personagens--container">
+
+        </section>
+
 
     </section>
 
