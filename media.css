@@ -1,0 +1,67 @@
+@media (max-width: 62.5rem) {
+    .hero--logo {
+        max-width: 21.875rem;
+    }
+
+    .hero--title,
+    .personagens--title {
+        font: 700 1.75rem/1.75rem "Anime Ace Bold", sans-serif;
+        padding: 1.5rem 4rem 1.5rem 1.625rem;
+    }
+
+    .personagens--title {
+        padding: 1rem 2rem 1.5rem 3.625rem;
+    }
+
+    .hero--corner {
+        height: 25rem;
+    }
+
+}
+
+@media (max-width: 40.625rem) {
+    .hero--corner {
+        display: none;
+    }
+
+    .thumb {
+        background: url(Assets/Images/Border_Paint.png) center/75% no-repeat;
+    }
+
+    .thumb img {
+        width: 72px;
+    }
+
+    #personagens {
+        padding: 8.125rem 1.25rem;
+    }
+}
+
+@media (max-width: 31.25rem) {
+    #hero {
+        padding: 3.375rem 0;
+    }
+
+    .hero--wrapper {
+        justify-content: center;
+    }
+
+    .hero--content {
+        margin-right: 0;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .hero--logo {
+        max-width: 256px;
+    }
+
+    .personagens--title {
+        font-size: 1.5rem;
+        padding: .75rem 1.5rem;
+    }
+
+    .img--nav {
+        width: 3rem;
+    }
+}

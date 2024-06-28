@@ -20,11 +20,11 @@ btnMenu.addEventListener("click", () => {
 function rotateSwirls() {
   const size = document.getElementById("swirl");
   const svgGroup = document.getElementById("rotate2");
-  const viewPortH = window.innerHeight;
-  const viewPortW = window.innerWidth;
+  // const viewPortH = window.innerHeight;
+  // const viewPortW = window.innerWidth;
   let angle = 0;
 
-  size.setAttribute("viewBox", `0 0 ${viewPortW} ${viewPortH}`);
+  // size.setAttribute("viewBox", `0 0 ${viewPortW} ${viewPortH}`);
 
   function rotate() {
     angle += -1;

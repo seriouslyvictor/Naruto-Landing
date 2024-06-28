@@ -8,10 +8,6 @@
     src: url(Assets/Fonts/animeace2bb_tt/animeace2_bld.ttf);
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     overflow-x: hidden;
     font-family: "Francois One", sans-serif;
@@ -73,7 +69,7 @@ body {
     content: "";
     background: url(Assets/SVGs/brush1.svg) center/100% auto no-repeat;
     width: 100%;
-    height: 6.25rem;
+    height: 100%;
     display: block;
     position: absolute;
     z-index: -1;
@@ -84,6 +80,7 @@ body {
 #swirl {
     position: absolute;
     height: 100vh;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: -1;
@@ -133,7 +130,7 @@ body {
 /* ======================== */
 
 #personagens {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background: url(Assets/Images/personagens__fundo.png) top/cover no-repeat fixed;
     padding-top: 16.25rem;
@@ -143,10 +140,7 @@ body {
 .personagens--title {
     width: fit-content;
     z-index: 1;
-    padding-left: 6.25rem;
-    padding-right: 4.4375rem;
-    padding-top: 2.125rem;
-    padding-bottom: 2.125rem;
+    padding: 2.125rem 4.4375rem 2.125rem 6.25rem;
 }
 
 .personagens--title::before {
